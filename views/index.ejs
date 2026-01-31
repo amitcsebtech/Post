@@ -4,8 +4,8 @@
         <div class="post">
             <h3 class="user"> @<%= post.username %> </h3>
             <h4 class="content"> <%= post.content %> </h4>
-            <a href="http://localhost:3000/post/<%= post.id %>">See more...</a> &nbsp; &nbsp;
-            <a href="http://localhost:3000/post/<%= post.id %>/edit">Edit</a> &nbsp; &nbsp;
+            <a href="/post/<%= post.id %>">See more...</a> &nbsp; &nbsp;
+            <a href="/post/<%= post.id %>/edit">Edit</a> &nbsp; &nbsp;
             <form method="post" action="/post/<%=post.id%>?_method=DELETE">
                 <button>Delete Post</button>
             </form>
@@ -14,6 +14,6 @@
         <% } %>
 
         <br> <br>
-        <a href="http://localhost:3000/posts/new">Create New Post</a>
+        <a href="/posts/new">Create New Post</a>
 </body>
 </html>

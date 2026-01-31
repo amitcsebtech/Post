@@ -1,0 +1,63 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Page Title */
+h1 {
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 28px;
+}
+
+/* Post Card */
+.post {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Username */
+.user {
+    color: #007bff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Post Content */
+.content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .post {
+        padding: 20px;
+    }
+}
